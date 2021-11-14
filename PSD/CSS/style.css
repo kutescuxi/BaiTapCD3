@@ -2,14 +2,21 @@
 	font-family: 'Pacifico-Regular';
 	src: url('../Fonts/Pacifico-Regular.ttf');
 }
+
+body {
+    height: 1500px;
+}
+
 .Container_Head {
     margin: -10px;
 }
 .header {
     background: #25B6EA;
     color: white;
-    width: 100%;
+    width: 104%;
     height: 100px;
+    position: fixed;
+    top: 0px;
 }
 .container {
     width: 90%;
@@ -56,12 +63,16 @@ li {
     font-size: 15px;
 }
 
-a {
+.menu a {
     color: white;
     text-decoration: none;
-    padding: 10px 15px ;
+    background-color: transparent;
+    padding: 10px 15px;
 }
 
+.main {
+    margin-top: 126px;
+}
 img {
     width: 242px;
     height: 291px;
@@ -104,16 +115,35 @@ h4.price {
 
 .sidebar .container {
     float: left;
-    width: 25%;
-    margin-left: 10px;
-    color: black;
+    width: 20%;
+    margin-left: 2.5%;
+    margin-top: 10px;
+    background: #25B6EA;
+    text-align: left;
+    border-radius: 3px;
 }
 
-a.learn-more {
-    background: #3393D1;
-    text-decoration: none;
-    padding: 8px 18px;
-    border-radius: 8px;
-    display: inline-block;
-    margin: 0 38px;
+ul.sidebar-nav {
+    display: grid;
+    position: fixed;
+}
+
+.sidebar-nav a {
+    color: black;
+    font-size: 22px;
+}
+.sidebar-brand a {
+    font-weight: bold;
+    font-size: 25px;
+}
+.sidebar-nav li {
+    line-height: 8px;
+}
+
+footer.bg-dark.text-center.text-white {
+    position: absolute;
+    bottom: -1500px;
+    width: 104%;
+    height: 150px;
+    line-height: 0px;
 }
