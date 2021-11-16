@@ -1,3 +1,8 @@
+*{
+     margin:0;
+     padding: 0;
+     box-sizing: border-box;
+ }
 @font-face {
 	font-family: 'Pacifico-Regular';
 	src: url('../Fonts/Pacifico-Regular.ttf');
@@ -32,17 +37,20 @@ body {
 .logo, .search {
 	width: 33.33%;
 }
+.search {
+    margin-top: 10px;
+}
 
-button {
-    background: white;
+button[type="submit"] {
+    background: #3393D1;
     border: none;
-    padding: 11px 14px 9px 11px;
+    padding: 9px 9px;
     border-radius: 3px;
+    color: white;
 }
 
 input[type="search"] {
     padding: 8px;
-    margin-top: 13px;
     border: none;
     font-size: 17px;
     border-radius: 3px;
@@ -76,12 +84,17 @@ li {
 img {
     width: 242px;
     height: 291px;
+    object-fit: cover;
 }
 
 h5 {
     color: rosybrown;
     margin: 4px 13px;
     font-size: 15px;
+}
+
+h5.h5 {
+    margin-left: -2px;
 }
 
 .a-h5 {
@@ -99,7 +112,7 @@ h4.price {
     color: black;
     float: left;
     margin: auto;
-    padding-left: 15px;
+    padding-left: -5px;
 }
 
 .col-img {
@@ -111,6 +124,7 @@ h4.price {
     float: right;
     width: 70%;
     margin-right: 10px;
+    margin-top: 10px;
 }
 
 .sidebar .container {
@@ -146,4 +160,39 @@ footer.bg-dark.text-center.text-white {
     width: 104%;
     height: 150px;
     line-height: 0px;
+}
+
+
+
+/*CSS trang chi tiết*/
+
+.row_ct {
+    display: flex;
+    /*position: relative;*/
+    margin-top: 150px;
+}
+/*.col_ct {
+    width: 50%;
+    margin: 10px 0px;
+}*/
+.img_ct {
+    width: 70%;
+}
+.p_detail {
+    width: 70%;
+    margin-top: 11px;
+}
+img.col_img_1 {
+    display: block;
+    width: 500px;
+    height: 530px;
+    margin: auto;
+}
+img.col_img {
+    width: 164px;
+    height: 165px;
+    padding: 0px -14px;
+}
+.col_ct h3 {
+    color: black;
 }
